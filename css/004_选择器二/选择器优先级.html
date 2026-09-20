@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        p{
+            color: black;
+        }
+
+        .text{
+            color: brown;
+            font-size: 5px;
+        }
+
+        #desc{
+            color: chartreuse;
+            font-size: 20px;
+        }
+
+        .text2{
+            color: red;
+        }
+
+        .text3{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+ 
+    <p>优先级：内敛选择器 > id > class > 元素</p>
+
+    <p style="color: blue;font-size: 40px;" class="text" id="desc">优先级</p>
+    
+    <p>如果一个标签有两个类的话，按代码执行顺序，上面先变红，后面再变绿，那绿的会把红的覆盖掉</p>
+
+    <p class="text2 text3">两个类</p>
+</body>
+</html>
